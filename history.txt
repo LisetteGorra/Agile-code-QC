@@ -8,3 +8,5 @@ npm install mongoose --save
 npm install mongo --save
 npm install ejs --save
 npm install body-parser --save
+
+1st push 
