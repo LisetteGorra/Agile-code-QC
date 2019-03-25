@@ -28,6 +28,11 @@ app.use("/agile", require("./routes/employees"));
 app.get("/", function(req, res) {
     res.render("landing");
 });
+router.post('/ninjas', function(req, res, next) {
+    Employee.create(req.body).then(function(ninja) {
+        res.send(ninja);
+
+    }).catch(next);
 
 
 // listen for requests
